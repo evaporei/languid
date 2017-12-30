@@ -1,14 +1,4 @@
-# languid
-
-A simple web framework, made for REST/JSON APIs
-
-## Installation
-
-`npm install --save languid`
-
-## Usage
-```javascript
-const languid = require('languid')
+const languid = require('../languid/lib')
 const Promise = require('bluebird')
 
 languid(req => {
@@ -27,7 +17,6 @@ languid(req => {
       throw new Error('stuff')
     })
     .catch(err => {
-      // this will be the last response
       return {
         statusCode: 401,
         headers: {
@@ -41,4 +30,3 @@ languid(req => {
     })
 })
   .listen(8000)
-```
