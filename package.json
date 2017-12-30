@@ -20,6 +20,7 @@
   "author": "Otávio Pace",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "ramda": "^0.25.0"
   }
 }
