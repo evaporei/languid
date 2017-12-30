@@ -1,0 +1,25 @@
+{
+  "name": "languid",
+  "version": "1.0.0",
+  "description": "web framework",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/otaviopace/languid"
+  },
+  "keywords": [
+    "web",
+    "framework",
+    "simple",
+    "rest",
+    "api"
+  ],
+  "author": "Otávio Pace",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.25.0"
+  }
+}
