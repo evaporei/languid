@@ -17,6 +17,9 @@ const app = languid()
 app.get('/', req => {
   console.log(req.headers)
   console.log(req.body)
+  console.log(req.query)
+  // the return of the promise chain
+  // will be the response
   return Promise.resolve({
     statusCode: 200,
     headers: {
@@ -29,6 +32,9 @@ app.get('/', req => {
 })
 
 app.post('/dino', req => {
+  console.log(req.headers)
+  console.log(req.body)
+  console.log(req.query)
   return Promise.resolve({
     statusCode: 201,
     body: req.body,
@@ -48,6 +54,9 @@ app.post('/dino', req => {
 })
 
 app.post('/bla', req => {
+  console.log(req.headers)
+  console.log(req.body)
+  console.log(req.query)
   return Promise.resolve({
     statusCode: 404,
     body: {
