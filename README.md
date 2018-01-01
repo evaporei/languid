@@ -1,4 +1,5 @@
 # languid
+[![Coverage Status](https://coveralls.io/repos/github/otaviopace/languid/badge.svg?branch=master)](https://coveralls.io/github/otaviopace/languid?branch=master)
 [![Build Status](https://travis-ci.org/otaviopace/languid.svg?branch=master)](https://travis-ci.org/otaviopace/languid)
 
 A simple web framework, made for REST/JSON APIs
