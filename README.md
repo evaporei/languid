@@ -1,4 +1,5 @@
 # languid
+[![Build Status](https://travis-ci.org/otaviopace/languid.svg?branch=master)](https://travis-ci.org/otaviopace/languid)
 
 A simple web framework, made for REST/JSON APIs
 

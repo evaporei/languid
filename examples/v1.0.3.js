@@ -1,4 +1,4 @@
-const languid = require('languid')
+const languid = require('../lib')
 const Promise = require('bluebird')
 
 const app = languid()

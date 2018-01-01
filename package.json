@@ -4,7 +4,7 @@
   "description": "web framework",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha --recursive test"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,10 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
   }
 }
