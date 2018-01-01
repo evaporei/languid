@@ -32,7 +32,7 @@ test('createLanguidReq', t => {
 
   const languidReq = createLanguidReq(httpReqMock)
 
-  const expectLanguidReq = {
+  const expectedLanguidReq = {
     body: {
       content: 'stuff',
     },
@@ -46,5 +46,5 @@ test('createLanguidReq', t => {
     url: '/bla?name=john',
   }
 
-  t.deepEqual(languidReq, expectLanguidReq, 'wrong content')
+  t.deepEqual(languidReq, expectedLanguidReq, 'wrong content')
 })
