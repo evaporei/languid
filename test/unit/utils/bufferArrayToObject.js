@@ -29,3 +29,19 @@ test('bufferArrayToObject', t => {
     'wrong content'
   )
 })
+
+test('bufferArrayToObject', t => {
+  const dataString = ''
+
+  const bufferArray = [Buffer(dataString)]
+
+  t.is(typeof bufferArrayToObject(bufferArray), 'object', 'wrong type')
+
+  const expectObject = {}
+
+  t.deepEqual(
+    bufferArrayToObject(bufferArray),
+    expectObject,
+    'wrong content'
+  )
+})
