@@ -52,7 +52,7 @@ test('executeHandler', t => {
 
   const response = executeHandler(languidReqMock)(route.handler)
 
-  const expectResponse = {
+  const expectedResponse = {
     statusCode: 204,
     body: {
       stuff: 'content',
@@ -60,5 +60,5 @@ test('executeHandler', t => {
   }
 
   t.is(handlerCalls, 1, 'wrong number of `handler` calls')
-  t.deepEqual(response, expectResponse, 'wrong response content')
+  t.deepEqual(response, expectedResponse, 'wrong response content')
 })

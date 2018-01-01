@@ -14,7 +14,7 @@ test('responseBuilder', t => {
 
   const response = responseBuilder(languidResMock)
 
-  const expectResponse = {
+  const expectedResponse = {
     statusCode: 500,
     headers: {
       a: 'header',
@@ -26,7 +26,7 @@ test('responseBuilder', t => {
     }),
   }
 
-  t.deepEqual(response, expectResponse, 'wrong content')
+  t.deepEqual(response, expectedResponse, 'wrong content')
 })
 
 test('responseBuilder', t => {
@@ -34,7 +34,7 @@ test('responseBuilder', t => {
 
   const response = responseBuilder(languidResMock)
 
-  const expectResponse = {
+  const expectedResponse = {
     statusCode: undefined,
     headers: {
       'Content-Type': 'application/json',
@@ -43,5 +43,5 @@ test('responseBuilder', t => {
     body: JSON.stringify({}),
   }
 
-  t.deepEqual(response, expectResponse, 'wrong content')
+  t.deepEqual(response, expectedResponse, 'wrong content')
 })

@@ -9,11 +9,11 @@ test('v1.0.3', t => {
     resolveWithFullResponse: true,
   }
 
-  const expectHeaders = {
+  const expectedHeaders = {
     stuff: 'content',
   }
 
-  const expectBody = JSON.stringify({
+  const expectedBody = JSON.stringify({
     ok: 'ok'
   })
 
@@ -23,7 +23,7 @@ test('v1.0.3', t => {
       t.is(res.headers['content-type'], 'application/json', 'wrong headers')
       t.is(res.headers['x-powered-by'], 'languid', 'wrong headers')
       t.is(res.headers.stuff, 'content', 'wrong headers')
-      t.is(res.body, expectBody, 'wrong body')
+      t.is(res.body, expectedBody, 'wrong body')
     })
     .catch(t.fail)
 })
@@ -39,9 +39,9 @@ test('v1.0.3', t => {
     json: true,
   }
 
-  const expectHeaders = {}
+  const expectedHeaders = {}
 
-  const expectBody = {
+  const expectedBody = {
     message: 'Internal Server Error',
   }
 
@@ -51,7 +51,7 @@ test('v1.0.3', t => {
       t.is(res.statusCode, 500, 'wrong statusCode')
       t.is(res.headers['content-type'], 'application/json', 'wrong headers')
       t.is(res.headers['x-powered-by'], 'languid', 'wrong headers')
-      t.deepEqual(res.body, expectBody, 'wrong body')
+      t.deepEqual(res.body, expectedBody, 'wrong body')
     })
 })
 
@@ -66,9 +66,9 @@ test('v1.0.3', t => {
     json: true,
   }
 
-  const expectHeaders = {}
+  const expectedHeaders = {}
 
-  const expectBody = {
+  const expectedBody = {
     got: 'bla'
   }
 
@@ -78,6 +78,6 @@ test('v1.0.3', t => {
       t.is(res.statusCode, 404, 'wrong statusCode')
       t.is(res.headers['content-type'], 'application/json', 'wrong headers')
       t.is(res.headers['x-powered-by'], 'languid', 'wrong headers')
-      t.deepEqual(res.body, expectBody, 'wrong body')
+      t.deepEqual(res.body, expectedBody, 'wrong body')
     })
 })

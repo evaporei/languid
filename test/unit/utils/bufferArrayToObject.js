@@ -37,11 +37,11 @@ test('bufferArrayToObject', t => {
 
   t.is(typeof bufferArrayToObject(bufferArray), 'object', 'wrong type')
 
-  const expectObject = {}
+  const expectedObject = {}
 
   t.deepEqual(
     bufferArrayToObject(bufferArray),
-    expectObject,
+    expectedObject,
     'wrong content'
   )
 })
