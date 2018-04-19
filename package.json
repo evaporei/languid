@@ -1,6 +1,6 @@
 {
   "name": "languid",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "web framework",
   "main": "lib/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/otaviopace/languid"
+    "url": "git+https://github.com/otaviopace/languid.git"
   },
   "keywords": [
     "web",
