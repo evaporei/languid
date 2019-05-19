@@ -1,8 +1,22 @@
-# languid
-[![Coverage Status](https://coveralls.io/repos/github/otaviopace/languid/badge.svg?branch=master)](https://coveralls.io/github/otaviopace/languid?branch=master)
-[![Build Status](https://travis-ci.org/otaviopace/languid.svg?branch=master)](https://travis-ci.org/otaviopace/languid)
+<p align="center">
+  <img alt="slug-logo" src="https://user-images.githubusercontent.com/15306309/57985116-b6cb1d80-7a39-11e9-9384-39b381241f15.jpg" width="200">
+</p>
 
-A simple web framework, made for REST/JSON APIs
+<h1 align="center">languid</h1>
+
+<p align="center">
+  <a href="https://coveralls.io/github/otaviopace/languid?branch=master">
+    <img alt="coverage-badge" src="https://coveralls.io/repos/github/otaviopace/languid/badge.svg?branch=master">
+  </a>
+  <a href="https://travis-ci.org/otaviopace/languid">
+    <img src="https://travis-ci.org/otaviopace/languid.svg?branch=master">
+  </a>
+</p>
+
+
+<p align="center">
+  A simple web framework, made for REST/JSON APIs
+</p>
 
 ## Installation
 
